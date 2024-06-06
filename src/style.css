@@ -1,1 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.container-fluid {
+  padding: 20px;
+}
+
+#excuse {
+  font-size: 60px;
+}
