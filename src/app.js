@@ -36,6 +36,12 @@ window.onload = function() {
     " " +
     when[rand_when] +
     "</p>";
+
+  const reload = document.getElementById("reload");
+
+  reload.addEventListener("click", _ => {
+    location.reload();
+  });
 };
 //for (let i = who; i < who.length; i++) {}
 console.log("OMG! You will not believe me but...");
