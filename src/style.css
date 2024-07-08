@@ -16,3 +16,13 @@ body {
 #excuse {
   font-size: 50px;
 }
+
+.btn-warning:hover {
+  background-color: #fedb73;
+  color: #3f454a;
+}
+
+.btn-warning:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
