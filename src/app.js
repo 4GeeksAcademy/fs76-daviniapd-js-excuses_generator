@@ -3,8 +3,9 @@ import "bootstrap";
 import "./style.css";
 import "./index.html";
 
-window.onload = function() {
-  //write your code here
+// window.onload = function() {
+
+function generateExcuse() {
   let who = [
     "The turtle",
     "My dad",
@@ -25,7 +26,7 @@ window.onload = function() {
   let rand_action = Math.floor(Math.random() * action.length);
   let rand_what = Math.floor(Math.random() * what.length);
   let rand_when = Math.floor(Math.random() * when.length);
-  //return who[i] + action[i] + what[i] + when[i];
+
   document.getElementById("excuse").innerHTML =
     "<p>" +
     who[rand_who] +
@@ -36,12 +37,12 @@ window.onload = function() {
     " " +
     when[rand_when] +
     "</p>";
+}
 
-  const reload = document.getElementById("reload");
+window.onload = generateExcuse;
 
-  reload.addEventListener("click", _ => {
-    location.reload();
-  });
-};
-//for (let i = who; i < who.length; i++) {}
+const reload = document.getElementById("reload");
+
+reload.addEventListener("click", generateExcuse);
+
 console.log("OMG! You will not believe me but...");
